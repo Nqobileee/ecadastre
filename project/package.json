@@ -1,0 +1,22 @@
+{
+  "name": "ecadastre-portal",
+  "version": "1.0.0",
+  "description": "Online Cadastral and Survey Records Management Portal (Department of the Surveyor-General, Zimbabwe)",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning server/server.js",
+    "dev": "node --watch --disable-warning=ExperimentalWarning server/server.js",
+    "reset": "node -e \"require('fs').rmSync('data',{recursive:true,force:true})\""
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.2.1",
+    "leaflet": "^1.9.4"
+  },
+  "engines": {
+    "node": ">=22.13"
+  },
+  "private": true
+}
